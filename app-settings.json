@@ -1,0 +1,23 @@
+{
+  "app": {
+    "name": "VIXEM Edge",
+    "version": "1.0.0",
+    "environment": "production"
+  },
+  "database": {
+    "mongodb_url": "mongodb://mongo:27017/",
+    "database_name": "tdc_workshop",
+    "collections": {
+      "events": "event_logs",
+      "recommendations": "recommendations"
+    }
+  },
+  "system": {
+    "machine_id": "MAQUINA-450"
+  },
+  "quality_thresholds": {
+    "rejection_rate_warning": 0.10,
+    "rejection_rate_critical": 0.15,
+    "consecutive_rejections_limit": 5
+  }
+}
