@@ -433,3 +433,204 @@
     ]
   }
 }
+
+"fmea_knowledge_base": {
+  "_comment": "📄 Base de conhecimento FMEA – modos de falha, causas e ações para o item 1318",
+  "Placa Sextavada": {
+    "modos_de_falha": [
+      {
+        "falha": "Peça mal formada no último estágio da ferramenta",
+        "efeito": "Compromete a conformidade dimensional e a utilização",
+        "causa": "Falha no avanço do alimentador",
+        "detecção": "Inspeção visual (03 peças no setup, 05 por hora)",
+        "ações_recomendadas": [
+          "Utilizar máquina com alimentador eletrônico",
+          "Monitorar avanço do alimentador",
+          "Verificar sincronismo entre estágios"
+        ],
+        "ações_implementadas": [
+          "Implantação de alimentador eletrônico"
+        ],
+        "rpn": 175,
+        "rpn_pos_acao": 70
+      },
+      {
+        "falha": "Trinca nas regiões dos raios",
+        "efeito": "Compromete a durabilidade da peça",
+        "causa": "Material fora de especificação, falta de lubrificação, punções impregnados",
+        "detecção": "Inspeção visual (03 peças no setup, 05 por hora)",
+        "ações_recomendadas": [
+          "Revisar pressão da máquina",
+          "Executar limpeza e manutenção dos punções",
+          "Garantir controle de matéria-prima"
+        ],
+        "ações_implementadas": [
+          "Aumento da frequência de inspeção visual",
+          "Revisão de parâmetros de processo"
+        ],
+        "rpn": 126,
+        "rpn_pos_acao": 90
+      },
+      {
+        "falha": "Furação menor que o especificado ou ausência de furo",
+        "efeito": "Impede montagem do parafuso",
+        "causa": "Desgaste ou quebra do punção",
+        "detecção": "Paquímetro (03 peças no setup, 1x por turno e fim de produção)",
+        "ações_recomendadas": [
+          "Executar punções com HSS temperado",
+          "Manutenção preventiva mais frequente",
+          "Verificar desgaste de ferramenta"
+        ],
+        "ações_implementadas": [
+          "Implantação de controle visual e dimensional em 100% das peças no setup"
+        ],
+        "rpn": 120,
+        "rpn_pos_acao": 60
+      },
+      {
+        "falha": "Altura da peça fora da especificação (menor)",
+        "efeito": "Vazamento de borracha no molde de vulcanização",
+        "causa": "Regulagem incorreta da máquina",
+        "detecção": "Traçador de altura (03 peças no setup, 1x por turno e fim)",
+        "ações_recomendadas": [
+          "Calibrador P/NP para altura",
+          "Colocar limitador de altura na ferramenta",
+          "Aumentar frequência de inspeção"
+        ],
+        "ações_implementadas": [
+          "Criação de calibrador P/NP e limitador de altura"
+        ],
+        "rpn": 105,
+        "rpn_pos_acao": 42
+      },
+      {
+        "falha": "Diâmetro externo fora do especificado",
+        "efeito": "Dificuldade de posicionamento no molde de vulcanização",
+        "causa": "Desgaste da matriz",
+        "detecção": "Inspeção com paquímetro (03 peças no setup, 1x por turno e fim)",
+        "ações_recomendadas": [
+          "Revisar plano de manutenção",
+          "Executar trocas preventivas da matriz"
+        ],
+        "ações_implementadas": [
+          "Revisão e aplicação de plano de manutenção preventiva"
+        ],
+        "rpn": 72,
+        "rpn_pos_acao": 48
+      },
+      {
+        "falha": "Peça com excesso de óleo",
+        "efeito": "Risco de incêndio e excesso de fumaça na solda",
+        "causa": "Acúmulo de óleo por estocagem ou variações de processo",
+        "detecção": "Inspeção visual (03 peças no setup, 05 por hora)",
+        "ações_recomendadas": [
+          "Controlar aplicação de óleo",
+          "Verificar manuseio conforme IP 05-02",
+          "Revisar intervalo de estocagem"
+        ],
+        "ações_implementadas": [
+          "Treinamento operacional e adequação do intervalo de estocagem"
+        ],
+        "rpn": 98,
+        "rpn_pos_acao": 70
+      },
+      {
+        "falha": "Ausência do parafuso soldado",
+        "efeito": "Peça não monta no cliente",
+        "causa": "Dispositivo de solda permite passar sem parafuso",
+        "detecção": "Inspeção visual (03 peças no setup, 05 por hora)",
+        "ações_recomendadas": [
+          "Implementar sistema sensor de contagem",
+          "Travamento da máquina ao detectar falha",
+          "Reforçar controle visual no setup"
+        ],
+        "ações_implementadas": [
+          "Implantação de sensor de presença de parafuso"
+        ],
+        "rpn": 126,
+        "rpn_pos_acao": 84
+      },
+      {
+        "falha": "Perpendicularidade do parafuso fora da tolerância",
+        "efeito": "Desalinhamento na montagem ou torque falso",
+        "causa": "Regulagem incorreta, eletrodo gasto ou pressão insuficiente",
+        "detecção": "Relógio apalpador",
+        "ações_recomendadas": [
+          "Revisar força e ciclo da solda",
+          "Verificar desgaste de eletrodo",
+          "Ajustar pressão do cilindro de solda"
+        ],
+        "ações_implementadas": [
+          "Ajuste de força e ciclo e troca programada de eletrodos"
+        ],
+        "rpn": 105,
+        "rpn_pos_acao": 70
+      },
+      {
+        "falha": "Falta de retenção do parafuso (caldeamento incompleto)",
+        "efeito": "Parafuso pode soltar ou não resistir ao torque",
+        "causa": "Falta de pressão ou eletrodo gasto",
+        "detecção": "Torquímetro e teste de arrancamento com martelo",
+        "ações_recomendadas": [
+          "Implementar CLP para contagem de soldas",
+          "Realizar troca automática de eletrodo",
+          "Executar teste de arrancamento periódico"
+        ],
+        "ações_implementadas": [
+          "CLP implantado e plano de troca periódica de eletrodo"
+        ],
+        "rpn": 120,
+        "rpn_pos_acao": 60
+      },
+      {
+        "falha": "Assentamento incorreto do parafuso",
+        "efeito": "Vazamento de fosfato ou borracha, perda de vedação",
+        "causa": "Fusão incompleta na solda de projeção",
+        "detecção": "Lâmina de folga 0,05 mm",
+        "ações_recomendadas": [
+          "Revisar força e tempo da solda",
+          "Ajustar ciclo e pressão da máquina",
+          "Verificar eletrodo e planicidade da peça"
+        ],
+        "ações_implementadas": [
+          "Revisão de parâmetros e verificação visual de cada setup"
+        ],
+        "rpn": 168,
+        "rpn_pos_acao": 126
+      },
+      {
+        "falha": "Planicidade convexa da peça",
+        "efeito": "Torque falso na montagem ou desalinhamento",
+        "causa": "Força excessiva na operação de solda",
+        "detecção": "Traçador de altura / relógio apalpador",
+        "ações_recomendadas": [
+          "Compensar ferramenta para concavidade até 0,5 mm",
+          "Ajustar força entre eletrodos",
+          "Revisar parâmetros de solda"
+        ],
+        "ações_implementadas": [
+          "Ferramental compensado com até 0,6 mm de concavidade"
+        ],
+        "rpn": 150,
+        "rpn_pos_acao": 60
+      }
+      {
+        "falha": "Planicidade convexa da peça",
+        "efeito": "Torque falso na montagem ou desalinhamento",
+        "causa": "Força excessiva na operação de solda",
+        "detecção": "Traçador de altura / relógio apalpador",
+        "ações_recomendadas": [
+          "Compensar ferramenta para concavidade até 0,5 mm",
+          "Ajustar força entre eletrodos",
+          "Revisar parâmetros de solda"
+        ],
+        "ações_implementadas": [
+          "Ferramental compensado com até 0,6 mm de concavidade"
+        ],
+        "rpn": 150,
+        "rpn_pos_acao": 60
+      },
+    ]
+  }
+}
+
